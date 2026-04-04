@@ -2,8 +2,9 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { ChevronDown } from 'lucide-react'
+import { ChevronDown, Github } from 'lucide-react'
 import { localeLabels, supportedLocales, useLanguage, type Locale } from '@/contexts/LanguageContext'
+import { SITE_GITHUB_REPO_URL } from '@/lib/site'
 
 export default function Footer() {
   const [regionOpen, setRegionOpen] = useState(false)
@@ -200,7 +201,16 @@ export default function Footer() {
                 )}
               </div>
             </div>
-            <div className="flex space-x-6">
+            <div className="flex flex-wrap gap-x-6 gap-y-2">
+              <a
+                href={SITE_GITHUB_REPO_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 hover:text-[#c9a227] transition-colors"
+              >
+                <Github size={14} className="shrink-0 opacity-80" aria-hidden />
+                {ui('openGitHubRepo', 'GitHub')}
+              </a>
               <Link href="/refund-policy" className="hover:text-[#c9a227] transition-colors">
                 {t('refundPolicy', 'Refund policy')}
               </Link>
