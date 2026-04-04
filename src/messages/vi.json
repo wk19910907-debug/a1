@@ -1,0 +1,51 @@
+{
+  "header": {
+    "featured": "Nổi bật",
+    "collections": "Bộ sưu tập",
+    "posts": "Bài viết",
+    "cart": "Giỏ hàng",
+    "login": "Đăng nhập",
+    "search": "Tìm kiếm"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "featured": "Nổi bật",
+    "collections": "Tất cả bộ sưu tập",
+    "posts": "Bài viết"
+  },
+  "footer": {
+    "shop": "Cửa hàng",
+    "support": "Hỗ trợ",
+    "contact": "Liên hệ",
+    "allCollections": "Tất cả bộ sưu tập",
+    "featuredThangkas": "Thangka nổi bật",
+    "myAccount": "Tài khoản của tôi",
+    "shoppingCart": "Giỏ hàng",
+    "blogPosts": "Bài viết blog"
+  },
+  "home": {
+    "welcome": "Chào mừng đến với The Thangka",
+    "subtitle": "Thangka Tây Tạng vẽ tay từ thung lũng Kathmandu, Nepal",
+    "featuredProducts": "Sản phẩm nổi bật",
+    "viewAll": "Xem tất cả",
+    "collections": "Bộ sưu tập thangka"
+  },
+  "product": {
+    "addToCart": "Thêm vào giỏ",
+    "buyNow": "Mua ngay",
+    "size": "Kích thước",
+    "price": "Giá",
+    "material": "Chất liệu",
+    "duration": "Thời gian tạo"
+  },
+  "cart": {
+    "empty": "Giỏ hàng của bạn trống",
+    "continueShopping": "Tiếp tục mua sắm",
+    "total": "Tổng",
+    "checkout": "Thanh toán"
+  },
+  "language": {
+    "select": "Chọn ngôn ngữ",
+    "current": "Ngôn ngữ hiện tại"
+  }
+}

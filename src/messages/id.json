@@ -1,0 +1,51 @@
+{
+  "header": {
+    "featured": "Unggulan",
+    "collections": "Koleksi",
+    "posts": "Artikel",
+    "cart": "Keranjang",
+    "login": "Masuk",
+    "search": "Cari"
+  },
+  "nav": {
+    "home": "Beranda",
+    "featured": "Unggulan",
+    "collections": "Semua Koleksi",
+    "posts": "Artikel"
+  },
+  "footer": {
+    "shop": "Toko",
+    "support": "Dukungan",
+    "contact": "Hubungi Kami",
+    "allCollections": "Semua Koleksi",
+    "featuredThangkas": "Thangka Unggulan",
+    "myAccount": "Akun Saya",
+    "shoppingCart": "Keranjang Belanja",
+    "blogPosts": "Artikel Blog"
+  },
+  "home": {
+    "welcome": "Selamat Datang di The Thangka",
+    "subtitle": "Thangka Tibet lukisan tangan dari lembah Kathmandu, Nepal",
+    "featuredProducts": "Produk Unggulan",
+    "viewAll": "Lihat Semua",
+    "collections": "Koleksi Thangka"
+  },
+  "product": {
+    "addToCart": "Tambahkan ke Keranjang",
+    "buyNow": "Beli Sekarang",
+    "size": "Ukuran",
+    "price": "Harga",
+    "material": "Bahan",
+    "duration": "Waktu Pembuatan"
+  },
+  "cart": {
+    "empty": "Keranjang Anda kosong",
+    "continueShopping": "Lanjutkan Belanja",
+    "total": "Total",
+    "checkout": "Checkout"
+  },
+  "language": {
+    "select": "Pilih Bahasa",
+    "current": "Bahasa Saat Ini"
+  }
+}

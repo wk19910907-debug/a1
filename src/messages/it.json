@@ -1,0 +1,51 @@
+{
+  "header": {
+    "featured": "In primo piano",
+    "collections": "Collezioni",
+    "posts": "Articoli",
+    "cart": "Carrello",
+    "login": "Accedi",
+    "search": "Cerca"
+  },
+  "nav": {
+    "home": "Home",
+    "featured": "In primo piano",
+    "collections": "Tutte le collezioni",
+    "posts": "Articoli"
+  },
+  "footer": {
+    "shop": "Negozio",
+    "support": "Supporto",
+    "contact": "Contatti",
+    "allCollections": "Tutte le collezioni",
+    "featuredThangkas": "Thangkas in primo piano",
+    "myAccount": "Il mio account",
+    "shoppingCart": "Carrello",
+    "blogPosts": "Articoli del blog"
+  },
+  "home": {
+    "welcome": "Benvenuto su The Thangka",
+    "subtitle": "Thangka tibetani dipinti a mano dalla valle di Kathmandu, Nepal",
+    "featuredProducts": "Prodotti in primo piano",
+    "viewAll": "Vedi tutto",
+    "collections": "Collezioni di thangka"
+  },
+  "product": {
+    "addToCart": "Aggiungi al carrello",
+    "buyNow": "Acquista ora",
+    "size": "Dimensione",
+    "price": "Prezzo",
+    "material": "Materiale",
+    "duration": "Tempo di creazione"
+  },
+  "cart": {
+    "empty": "Il tuo carrello è vuoto",
+    "continueShopping": "Continua a fare acquisti",
+    "total": "Totale",
+    "checkout": "Checkout"
+  },
+  "language": {
+    "select": "Seleziona lingua",
+    "current": "Lingua attuale"
+  }
+}

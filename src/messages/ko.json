@@ -1,0 +1,51 @@
+{
+  "header": {
+    "featured": "추천",
+    "collections": "컬렉션",
+    "posts": "게시물",
+    "cart": "장바구니",
+    "login": "로그인",
+    "search": "검색"
+  },
+  "nav": {
+    "home": "홈",
+    "featured": "추천",
+    "collections": "전체 컬렉션",
+    "posts": "게시물"
+  },
+  "footer": {
+    "shop": "상점",
+    "support": "지원",
+    "contact": "문의하기",
+    "allCollections": "전체 컬렉션",
+    "featuredThangkas": "추천 탕카",
+    "myAccount": "내 계정",
+    "shoppingCart": "장바구니",
+    "blogPosts": "블로그 게시물"
+  },
+  "home": {
+    "welcome": "The Thangka에 오신 것을 환영합니다",
+    "subtitle": "네팔 카트만두 계곡의 수제 티베트 탕카",
+    "featuredProducts": "추천 상품",
+    "viewAll": "전체보기",
+    "collections": "탕카 컬렉션"
+  },
+  "product": {
+    "addToCart": "장바구니에 담기",
+    "buyNow": "즉시 구매",
+    "size": "크기",
+    "price": "가격",
+    "material": "재료",
+    "duration": "제작 시간"
+  },
+  "cart": {
+    "empty": "장바구니가 비어 있습니다",
+    "continueShopping": "쇼핑 계속하기",
+    "total": "합계",
+    "checkout": "결제하기"
+  },
+  "language": {
+    "select": "언어 선택",
+    "current": "현재 언어"
+  }
+}

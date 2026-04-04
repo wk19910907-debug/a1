@@ -1,0 +1,51 @@
+{
+  "header": {
+    "featured": "แนะนำ",
+    "collections": "คอลเลกชัน",
+    "posts": "บทความ",
+    "cart": "ตะกร้า",
+    "login": "เข้าสู่ระบบ",
+    "search": "ค้นหา"
+  },
+  "nav": {
+    "home": "หน้าหลัก",
+    "featured": "แนะนำ",
+    "collections": "คอลเลกชันทั้งหมด",
+    "posts": "บทความ"
+  },
+  "footer": {
+    "shop": "ร้านค้า",
+    "support": "สนับสนุน",
+    "contact": "ติดต่อเรา",
+    "allCollections": "คอลเลกชันทั้งหมด",
+    "featuredThangkas": "ทังก้าแนะนำ",
+    "myAccount": "บัญชีของฉัน",
+    "shoppingCart": "ตะกร้าสินค้า",
+    "blogPosts": "บทความบล็อก"
+  },
+  "home": {
+    "welcome": "ยินดีต้อนรับสู่ The Thangka",
+    "subtitle": "ทังก้าทิเบตเขียนด้วยมือจากหุบเขากาฐมาณฑุ เนปาล",
+    "featuredProducts": "สินค้าแนะนำ",
+    "viewAll": "ดูทั้งหมด",
+    "collections": "คอลเลกชันทังก้า"
+  },
+  "product": {
+    "addToCart": "เพิ่มลงในตะกร้า",
+    "buyNow": "ซื้อเลย",
+    "size": "ขนาด",
+    "price": "ราคา",
+    "material": "วัสดุ",
+    "duration": "เวลาการสร้าง"
+  },
+  "cart": {
+    "empty": "ตะกร้าของคุณว่างเปล่า",
+    "continueShopping": "เลือกซื้อสินค้าต่อ",
+    "total": "ยอดรวม",
+    "checkout": "ชำระเงิน"
+  },
+  "language": {
+    "select": "เลือกภาษา",
+    "current": "ภาษาปัจจุบัน"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "header": {
+    "featured": "متميز",
+    "collections": "المجموعات",
+    "posts": "المقالات",
+    "cart": "سلة التسوق",
+    "login": "تسجيل الدخول",
+    "search": "بحث"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "featured": "متميز",
+    "collections": "جميع المجموعات",
+    "posts": "المقالات"
+  },
+  "footer": {
+    "shop": "المتجر",
+    "support": "الدعم",
+    "contact": "اتصل بنا",
+    "allCollections": "جميع المجموعات",
+    "featuredThangkas": "تانكا متميزة",
+    "myAccount": "حسابي",
+    "shoppingCart": "سلة التسوق",
+    "blogPosts": "مقالات المدونة"
+  },
+  "home": {
+    "welcome": "مرحباً بكم في The Thangka",
+    "subtitle": "تانكا تبتية مرسومة باليد من وادي كاتماندو، نيبال",
+    "featuredProducts": "منتجات متميزة",
+    "viewAll": "عرض الكل",
+    "collections": "مجموعات التانكا"
+  },
+  "product": {
+    "addToCart": "أضف إلى السلة",
+    "buyNow": "اشتر الآن",
+    "size": "الحجم",
+    "price": "السعر",
+    "material": "المواد",
+    "duration": "وقت الإنشاء"
+  },
+  "cart": {
+    "empty": "سلة التسوق فارغة",
+    "continueShopping": "مواصلة التسوق",
+    "total": "المجموع",
+    "checkout": "إتمام الشراء"
+  },
+  "language": {
+    "select": "اختر اللغة",
+    "current": "اللغة الحالية"
+  }
+}

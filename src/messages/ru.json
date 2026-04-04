@@ -1,0 +1,51 @@
+{
+  "header": {
+    "featured": "Рекомендуемые",
+    "collections": "Коллекции",
+    "posts": "Статьи",
+    "cart": "Корзина",
+    "login": "Войти",
+    "search": "Поиск"
+  },
+  "nav": {
+    "home": "Главная",
+    "featured": "Рекомендуемые",
+    "collections": "Все коллекции",
+    "posts": "Статьи"
+  },
+  "footer": {
+    "shop": "Магазин",
+    "support": "Поддержка",
+    "contact": "Контакты",
+    "allCollections": "Все коллекции",
+    "featuredThangkas": "Рекомендуемые тангка",
+    "myAccount": "Мой аккаунт",
+    "shoppingCart": "Корзина",
+    "blogPosts": "Статьи блога"
+  },
+  "home": {
+    "welcome": "Добро пожаловать в The Thangka",
+    "subtitle": "Росписные тибетские тангка из долины Катманду, Непал",
+    "featuredProducts": "Рекомендуемые товары",
+    "viewAll": "Смотреть все",
+    "collections": "Коллекции тангка"
+  },
+  "product": {
+    "addToCart": "Добавить в корзину",
+    "buyNow": "Купить сейчас",
+    "size": "Размер",
+    "price": "Цена",
+    "material": "Материал",
+    "duration": "Время создания"
+  },
+  "cart": {
+    "empty": "Ваша корзина пуста",
+    "continueShopping": "Продолжить покупки",
+    "total": "Итого",
+    "checkout": "Оформить заказ"
+  },
+  "language": {
+    "select": "Выбрать язык",
+    "current": "Текущий язык"
+  }
+}

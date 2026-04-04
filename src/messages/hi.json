@@ -1,0 +1,51 @@
+{
+  "header": {
+    "featured": "विशेष रुप से प्रस्तुत",
+    "collections": "संग्रह",
+    "posts": "लेख",
+    "cart": "कार्ट",
+    "login": "लॉग इन",
+    "search": "खोजें"
+  },
+  "nav": {
+    "home": "होम",
+    "featured": "विशेष रुप से प्रस्तुत",
+    "collections": "सभी संग्रह",
+    "posts": "लेख"
+  },
+  "footer": {
+    "shop": "दुकान",
+    "support": "सहायता",
+    "contact": "संपर्क करें",
+    "allCollections": "सभी संग्रह",
+    "featuredThangkas": "विशेष थंगका",
+    "myAccount": "मेरा खाता",
+    "shoppingCart": "शॉपिंग कार्ट",
+    "blogPosts": "ब्लॉग लेख"
+  },
+  "home": {
+    "welcome": "The Thangka में आपका स्वागत है",
+    "subtitle": "काठमांडू घाटी, नेपाल से हाथ से बने तिब्बती थंगका",
+    "featuredProducts": "विशेष उत्पाद",
+    "viewAll": "सभी देखें",
+    "collections": "थंगका संग्रह"
+  },
+  "product": {
+    "addToCart": "कार्ट में डालें",
+    "buyNow": "अभी खरीदें",
+    "size": "आकार",
+    "price": "मूल्य",
+    "material": "सामग्री",
+    "duration": "निर्माण समय"
+  },
+  "cart": {
+    "empty": "आपका कार्ट खाली है",
+    "continueShopping": "खरीदारी जारी रखें",
+    "total": "कुल",
+    "checkout": "चेकआउट"
+  },
+  "language": {
+    "select": "भाषा चुनें",
+    "current": "वर्तमान भाषा"
+  }
+}
