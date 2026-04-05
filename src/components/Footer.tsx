@@ -5,6 +5,8 @@ import Link from 'next/link'
 import { ChevronDown, Github } from 'lucide-react'
 import { localeLabels, supportedLocales, useLanguage, type Locale } from '@/contexts/LanguageContext'
 import { SITE_GITHUB_REPO_URL } from '@/lib/site'
+import { getResolvedContact, getResolvedSecondEmail } from '@/lib/contact'
+import NewsletterSubscribe from '@/components/NewsletterSubscribe'
 
 export default function Footer() {
   const [regionOpen, setRegionOpen] = useState(false)
@@ -19,16 +21,26 @@ export default function Footer() {
     return isCjk ? value : value.toUpperCase()
   }
 
+  const contact = getResolvedContact(
+    ui('footerPhoneValue', '+86 18251815459'),
+    ui('footerEmailValue', '1241272568@qq.com'),
+  )
+  const email2 = getResolvedSecondEmail(ui('footerEmailValue2', 'wk199109070@gmail.com'))
+  const mailHref = `mailto:${contact.email}`
+  const mail2Href = email2 ? `mailto:${email2}` : null
+  const telDigits = contact.phone.replace(/[^\d+]/g, '')
+  const telHref = telDigits ? `tel:${telDigits}` : null
+
   const regionOptions = ['United States | USD $', 'China | CNY ¥', 'Canada | CAD $', 'United Kingdom | GBP £']
   const languageOptions: Locale[] = [...supportedLocales]
 
   const paymentMethods = [
-    { short: 'AMEX', label: 'American Express' },
-    { short: 'Apple', label: 'Apple Pay' },
-    { short: 'MC', label: 'Mastercard' },
-    { short: 'PP', label: 'PayPal' },
-    { short: 'Shop', label: 'Shop Pay' },
+    { short: 'AWX', label: 'Airwallex' },
+    { short: 'ST', label: 'Stripe' },
+    { short: 'WX', label: 'WeChat Pay' },
     { short: 'VISA', label: 'Visa' },
+    { short: 'MC', label: 'Mastercard' },
+    { short: 'AMEX', label: 'American Express' },
   ]
 
   return (
@@ -101,8 +113,30 @@ export default function Footer() {
               <p>{ui('officeAddress', 'Beijing, China')}</p>
               <p className="mt-4 font-medium text-white/70">{ui('storeTibet', 'Store - Tibet')}</p>
               <p>{ui('storeAddress', 'Lhasa, Tibet, China')}</p>
-              <p className="mt-4">{ui('phoneLabel', 'Phone')}: +86-xxx-xxxx-xxxx</p>
-              <p>{ui('emailLabel', 'E-Mail')}: hello@thangka.com</p>
+              <p className="mt-4">
+                {ui('phoneLabel', 'Phone')}:{' '}
+                {telHref ? (
+                  <a href={telHref} className="text-white/60 hover:text-[#c9a227] transition-colors">
+                    {contact.phone}
+                  </a>
+                ) : (
+                  <span>{contact.phone}</span>
+                )}
+              </p>
+              <p>
+                {ui('emailLabel', 'E-Mail')}:{' '}
+                <a href={mailHref} className="text-white/60 hover:text-[#c9a227] transition-colors break-all">
+                  {contact.email}
+                </a>
+              </p>
+              {email2 && mail2Href && (
+                <p>
+                  {ui('emailLabelAlt', 'E-Mail (2)')}:{' '}
+                  <a href={mail2Href} className="text-white/60 hover:text-[#c9a227] transition-colors break-all">
+                    {email2}
+                  </a>
+                </p>
+              )}
             </div>
           </div>
         </div>
@@ -117,9 +151,7 @@ export default function Footer() {
             </div>
             <div>
               <h4 className="text-sm font-medium text-white mb-3 tracking-wider">{ui('subscribeEmails', 'SUBSCRIBE TO OUR EMAILS')}</h4>
-              <div className="w-full max-w-md border border-[#8a8a8a]/30 px-3 py-2 text-sm text-white/50">
-                {ui('emailLabel', 'E-Mail')}
-              </div>
+              <NewsletterSubscribe />
             </div>
             <div>
               <h4 className="text-sm font-medium text-white mb-3 tracking-wider">{ui('paymentMethods', 'PAYMENT METHODS')}</h4>

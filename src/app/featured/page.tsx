@@ -13,7 +13,6 @@ export default function FeaturedPage() {
     id: Number(p.id),
     name: locale === 'zh' ? p.nameZh : locale === 'ja' ? p.nameJa : p.nameEn,
     size: p.size.replace(' cm', ''),
-    price: p.priceCny,
     image: p.image,
     href: `/${p.slug}`,
   }))
@@ -48,9 +47,6 @@ export default function FeaturedPage() {
               <div className="p-4">
                 <h2 className="min-h-[2.7em] text-base font-medium leading-snug text-stone-900 transition group-hover:text-burgundy">{product.name}</h2>
                 <p className="mt-1 text-sm text-stone-500">{product.size}</p>
-                <p className="mt-2 text-lg font-medium text-thangka-gold">
-                  {t('ui', 'fromPricePrefix', 'From')} ${product.price.toLocaleString()}.00 USD
-                </p>
               </div>
             </Link>
           ))}

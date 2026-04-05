@@ -9,7 +9,6 @@ interface Product {
   id: string
   name: string
   size: string
-  price: number
   image: string
   category: string
 }
@@ -19,7 +18,6 @@ const featuredProducts: Product[] = [
     id: '1',
     name: '黄财神',
     size: '60*45',
-    price: 2800,
     image: '/images/黄财神.webp',
     category: 'Featured',
   },
@@ -27,7 +25,6 @@ const featuredProducts: Product[] = [
     id: '2',
     name: '绿度母',
     size: '60*45',
-    price: 3200,
     image: '/images/绿度母.webp',
     category: 'Featured',
   },
@@ -35,7 +32,6 @@ const featuredProducts: Product[] = [
     id: '3',
     name: '四臂观音',
     size: '76*56',
-    price: 3500,
     image: '/images/四臂观音.webp',
     category: 'Featured',
   },
@@ -43,7 +39,6 @@ const featuredProducts: Product[] = [
     id: '4',
     name: '阿弥陀佛',
     size: '60*45',
-    price: 3800,
     image: '/images/阿弥陀佛.webp',
     category: 'Featured',
   },
@@ -51,7 +46,6 @@ const featuredProducts: Product[] = [
     id: '5',
     name: '药师佛',
     size: '52*40',
-    price: 3000,
     image: '/images/药师佛.webp',
     category: 'Featured',
   },
@@ -59,7 +53,6 @@ const featuredProducts: Product[] = [
     id: '6',
     name: '文殊菩萨',
     size: '66*44',
-    price: 2600,
     image: '/images/文殊.webp',
     category: 'Featured',
   },
@@ -174,9 +167,6 @@ export default function FeaturedProducts({ onAddToCart }: { onAddToCart: (produc
                       {localizedNames[product.id]?.[locale] || localizedNames[product.id]?.en || product.name}
                     </Link>
                     <p className="mt-1 text-xs text-stone-500">{product.size}</p>
-                    <p className="mt-2 text-sm font-medium text-thangka-gold">
-                      {t('ui', 'fromPricePrefix', 'From')} ${Math.round(product.price / 4).toLocaleString()}.00 USD
-                    </p>
                   </div>
                 </div>
               </div>

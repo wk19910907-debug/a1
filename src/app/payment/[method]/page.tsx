@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import PaymentMethodFlowClient, { type PaymentFlowMethod } from '@/components/PaymentMethodFlowClient'
 
-const METHODS: PaymentFlowMethod[] = ['wechat', 'alipay', 'stripe', 'paypal', 'airwallex']
+const METHODS: PaymentFlowMethod[] = ['airwallex', 'stripe', 'wechat']
 
 function isMethod(s: string): s is PaymentFlowMethod {
   return (METHODS as string[]).includes(s)

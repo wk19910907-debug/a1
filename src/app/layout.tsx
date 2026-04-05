@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { LanguageProvider } from '@/contexts/LanguageContext'
+import SiteIntegrations from '@/components/SiteIntegrations'
 
 export const metadata: Metadata = {
   title: '唐卡艺术 | The Thangka',
@@ -15,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="zh-CN" className="scroll-smooth">
       <body className="antialiased">
+        <SiteIntegrations />
         <LanguageProvider>
           {children}
         </LanguageProvider>

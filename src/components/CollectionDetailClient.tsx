@@ -44,9 +44,6 @@ export default function CollectionDetailClient({
                 <h3 className="text-sm font-medium leading-snug text-stone-800">
                   {current.name.replace('Thangkas', ui('thangkaPainting', 'Thangka Painting'))} {60 + idx}*{40 + idx}
                 </h3>
-                <p className="mt-2 text-base font-medium text-thangka-gold">
-                  {ui('fromPricePrefix', 'From')} ${(520 + idx * 120).toLocaleString()}.00 USD
-                </p>
               </div>
             </article>
           ))}

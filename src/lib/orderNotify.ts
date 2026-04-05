@@ -1,3 +1,6 @@
+import { sendPaymentSuccessEmail } from '@/lib/orderNotifyEmail'
+import { sendPaymentSuccessSms } from '@/lib/orderNotifySms'
+
 type PaymentIntentLike = {
   id?: string
   merchant_order_id?: string
@@ -46,10 +49,11 @@ function webhookBodyForProvider(url: string, text: string, summary: Record<strin
 }
 
 /**
- * Fire-and-forget notifications (Telegram + optional HTTP webhook).
+ * Payment success → Telegram + optional webhook + optional QQ/SMTP email + optional Twilio SMS.
  */
 export async function notifyPaymentSucceeded(event: AirwallexPaymentEvent): Promise<void> {
   const text = formatPaymentSuccessMessage(event)
+  const subject = `【Thangka Shop】支付成功 ${event.data?.object?.merchant_order_id || event.data?.object?.id || ''}`.trim()
   const obj = event.data?.object ?? {}
   const summary: Record<string, unknown> = {
     event: event.name,
@@ -61,6 +65,19 @@ export async function notifyPaymentSucceeded(event: AirwallexPaymentEvent): Prom
   }
 
   const tasks: Promise<unknown>[] = []
+
+  if (process.env.ORDER_NOTIFY_EMAIL_TO?.trim() && process.env.SMTP_USER?.trim() && process.env.SMTP_PASS?.trim()) {
+    tasks.push(sendPaymentSuccessEmail(subject, text).catch(() => null))
+  }
+
+  if (
+    process.env.TWILIO_ACCOUNT_SID?.trim() &&
+    process.env.TWILIO_AUTH_TOKEN?.trim() &&
+    process.env.TWILIO_SMS_FROM?.trim() &&
+    process.env.ORDER_NOTIFY_SMS_TO?.trim()
+  ) {
+    tasks.push(sendPaymentSuccessSms(text).catch(() => null))
+  }
 
   const hookUrl = process.env.ORDER_NOTIFY_WEBHOOK_URL?.trim()
   if (hookUrl) {

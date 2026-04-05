@@ -40,8 +40,7 @@ export default function ProductDetailPage({ product }: { product: ProductMeta })
             <h1 className="mt-3 font-serif text-3xl font-normal leading-tight text-stone-900 lg:text-4xl">{productName}</h1>
 
             <div className="mt-8 border-t border-stone-200/80 pt-8">
-              <p className="font-serif text-3xl font-medium text-thangka-gold">¥{product.priceCny.toLocaleString()}</p>
-              <p className="mt-2 text-sm text-stone-500">
+              <p className="text-sm text-stone-500">
                 {t('product', 'size', 'Size')}: <span className="text-stone-800">{product.size}</span>
               </p>
             </div>
