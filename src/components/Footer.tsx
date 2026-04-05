@@ -222,7 +222,7 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-          <p className="text-xs text-white/40 mt-4">{ui('copyright', '© 2026, The Thangka Powered by Shopify')}</p>
+          <p className="text-xs text-white/40 mt-4">{ui('copyright', '© 2026, The Thangka. All rights reserved.')}</p>
         </div>
       </div>
     </footer>
